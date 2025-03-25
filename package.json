@@ -14,6 +14,7 @@
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "ably": "^2.0.1",
+    "blaze-sdk": "^1.0.7",
     "dotenv": "^16.0.3",
     "eslint": "8.50.0",
     "flowbite": "^1.8.1",

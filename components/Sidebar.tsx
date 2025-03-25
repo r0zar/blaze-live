@@ -34,6 +34,11 @@ export default function Sidebar(props: { pageId: string; }) {
       menuItemText: "History",
       menuItemActive: false,
       menuItemLink: '/history'
+    },
+    {
+      menuItemId: "BlazeWallet",
+      menuItemText: "Blaze Wallet",
+      menuItemLink: "/blaze-wallet"
     }
   ]
   

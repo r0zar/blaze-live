@@ -7,21 +7,21 @@ import "../global.css";
 import dynamic from 'next/dynamic';
 import Sidebar from "../../components/Sidebar.tsx";
 
-const PubSubClient = dynamic(() => import('./pubsub-client.tsx'), {
+const BlazeClient = dynamic(() => import('./blaze-client'), {
   ssr: false,
 })
 
-const PubSub = () => {
-  const pageId = "PubSub";
+const BlazeWallet = () => {
+  const pageId = "BlazeWallet";
 
   return (
     <>
       <Sidebar pageId={pageId} />
-      <div className="flex flex-col grow gap-6 pt-12 pr-12 pb-12 pl-12 rounded-2xl border-slate-100 border-t border-b border-l border-r border-solid border h-[864px] bg-slate-50">
-        <PubSubClient />
+      <div className="flex flex-col grow pt-12 pr-12 pb-12 pl-12 rounded-2xl border-slate-100 border-t border-b border-l border-r border-solid border h-[864px] bg-slate-50">
+        <BlazeClient />
       </div>
     </>
   )
 };
 
-export default PubSub;
+export default BlazeWallet; 
